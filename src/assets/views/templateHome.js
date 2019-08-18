@@ -5,7 +5,7 @@ export const templateHome = () => {
    <section class="content">
     <strong> <p>Tu Red Social, para compartir información, vivencias, Tips  y todo lo que quieras con mujeres de la Comunidad Tech.</p> </strong>      
    </section>
- <img class="avatar" id="avatar" src="assets/img/usuario.png">
+ <img class="avatar" id="avatar" src="assets/img/avatarNew2.jpg">
     <div class="buttonPpal" id="containerLogin">
       <a href="#/login"class= "buttons"> Iniciar Sesión</a>
     </div>
