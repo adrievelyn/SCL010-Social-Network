@@ -11,18 +11,20 @@ export const templateLogin = () => {
 
 <div class="formulario">
 		<div class="contenedor-form">
-			<h2>Se parte de este Gran Equipo.</h2>
+			<h2>Se parte de esta Gran Comunidad.</h2>
 			
 			<a href="index.html"><img src="assets/img/Captura4.JPG" class="logoReg2" alt="logoComunidad laboratoria"></a>
-			
+			<h3>Logueate</h3>
 			<br> 
+
 			<form action="#">
-				<input type="email" id="emailSesion" placeholder="Correo electronico" required>
-				<input type="password"  id="passwordSesion" placeholder="Contraseña" required>
+				<input type="email" id="emailSesion" placeholder="Correo electrónico" required>
+				<input type="password" id="passwordSesion" placeholder="Contraseña" required>
 				<div class="btn-submit">
 					<button class="button2" id="btnInicioEmail">Iniciar Sesión</button>
 					<br> <br>
 				</div>
+				
 				<div class="google-btn">
 					<button class="button2" id="authGoogle">Iniciar con Google</button>
 				</div>

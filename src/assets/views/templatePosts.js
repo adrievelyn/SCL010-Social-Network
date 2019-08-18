@@ -7,13 +7,14 @@ import {
 
 
 export const templatePosts = () => {
-  var user = firebase.auth().currentUser;
+  let user = firebase.auth().currentUser;
+
   const containerPosts = document.createElement("div");
   containerPosts.className = "containerPosts";
   //if (user != null) {
    const contentPosts = `
 
-  <div class="wall">
+  <div id="wall" class="wall">
 <section class="posts" id="posts">        
     </section>
 
@@ -24,6 +25,7 @@ export const templatePosts = () => {
       <div><button class="buttPub" id="publicar">Crear Publicación</button></div>
       <div><button class="buttPho" id="pushPhoto">Sube tu Foto</button></div>
       <div><button class="buttOut" id="signOut">Cerrar Sesión</button></div>
+
       </section>
 
   </div>
@@ -34,7 +36,8 @@ export const templatePosts = () => {
 
     `;
     containerPosts.innerHTML = contentPosts;
-    let posts = showPosts(containerPosts.querySelector("#posts"));
+    const posts = containerPosts.querySelector("#wall");
+    posts.innerHTML = showPosts(posts);
     const buttonPublicar = containerPosts.querySelector("#publicar");
     buttonPublicar.addEventListener("click", () => {
       location.href = "#/newPost"
@@ -44,8 +47,11 @@ export const templatePosts = () => {
     buttonSignOut.addEventListener("click", () => {
       authSignOut();
     });
-
-
+    let post = containerPosts.firstChild;
+    let boton = post.getElementsByClassName("bLike")
+    boton.addEventListener("click", () => {
+     alert("HOla");
+    });
 /*  } else {
     M.toast({
       html: 'Por favor realiza login en el sistema'
@@ -58,27 +64,30 @@ export const templatePosts = () => {
 };
 
 
- export const   showPosts = (posts) => {
+ export const   showPosts = (postsSection) => {
       let database = connectDB();
-      
-      database.collection('posts').onSnapshot(querySnapshot => {
-        posts.innerHTML = "";
+      let user = firebase.auth().currentUser;
+      database.collection('posts').where('autor', "==", user.email).onSnapshot( querySnapshot => {
+        postsSection.innerHTML = "";
         if (querySnapshot.empty){
-          posts.innerHTML = obtenerTemplatePostVacio();
+          postsSection.innerHTML = obtenerTemplatePostVacio();
+
         }else {
           let postHtml = "";
           querySnapshot.forEach( post => {
-            postHtml = obtenerPostTemplate(
-              post.data().autor,
-              post.data().titulo,
-              post.data().comentario,
-              obtenerFecha(post.data().fecha.toDate())
-            ) + postHtml;
+              postHtml = obtenerPostTemplate(
+                post.data().autor,
+                post.data().titulo,
+                post.data().comentario,
+                obtenerFecha(post.data().fecha.toDate())
+              ) + postHtml;
           });
-         posts.innerHTML = postHtml;
+         postsSection.innerHTML = postHtml;
+
         }
       });
-      return posts;
+
+      return postsSection;
     }
 
 export const obtenerTemplatePostVacio = () => {
@@ -90,7 +99,9 @@ export const obtenerTemplatePostVacio = () => {
   `
   }
   export const obtenerPostTemplate  = ( autor, titulo, comentario, fecha) => {
-    return `<article class="post">
+    const containerArticles = document.createElement("article");
+    const contentArticles = `
+<div>
                 
                 <div class="post-descripcion">
                     <p>${comentario}</p>
@@ -112,11 +123,27 @@ export const obtenerTemplatePostVacio = () => {
                 </div>
                   <section class="buttons">
       <button class="bLike">Me gusta</button>
-      <button class="bComment">Comentar</button>
-      <button class="bEdit">Editar</button>
-      <button class="bRemove">Eliminar</button>
+      <button class="bComment" id="comment">Comentar</button>
+      <button class="bEdit" id="edit">Editar</button>
+      <button class="bRemove" id="delete">Eliminar</button>
   </section>
-            </article>`
+  </div>
+    `
+    containerArticles.innerHTML = contentArticles;
+    const buttonComment = containerArticles.querySelector("#comment");
+    buttonComment.addEventListener("click", () => {
+     alert("HOla");
+    });
+    const buttonEdit = containerArticles.querySelector("#edit");
+    buttonEdit.addEventListener("click", () => {
+      console.log("Editar");
+    });
+    const buttonDelete = containerArticles.querySelector("#delete");
+    buttonDelete.addEventListener("click", () => {
+      console.log("Eliminar");
+    });
+
+    return containerArticles.innerHTML;
   }
 
   export const obtenerFecha = (timeStamp) => {    

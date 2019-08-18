@@ -1,8 +1,9 @@
 export const authCuentaGoogle = () => {
-  const provider = new firebase.auth.GoogleAuthProvider()
+  const provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
     firebase.auth().signInWithPopup(provider)
     .then(result => {
-       $('#avatar').attr('src', result.user.photoURL);
+      // document.document.getElementById("avatar").src = result.user.photoURL
       M.toast({html: 'Bienvenido '+result.user.displayName+ ' te logueaste con Google'})
       location.href = "#/posts"
     }).catch(error => {
@@ -12,6 +13,7 @@ export const authCuentaGoogle = () => {
 };
 
 export const authEmailPass = (email, password) => {
+  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
   firebase.auth().signInWithEmailAndPassword(email, password)
   .then(result => {
     if (result.user.emailVerified) {
@@ -53,6 +55,10 @@ export const crearCuentaEmailPass = (email, password, nombres)  =>{
 };
 
 export const authSignOut = () => {
-  firebase.auth().signOut();
+  firebase.auth().signOut().then(function() {
+    location.href = "#/login"
+  }).catch(function(error) {
+    // An error happened.
+  });
   location.href = "#/login"
 }

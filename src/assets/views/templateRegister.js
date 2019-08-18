@@ -5,10 +5,16 @@ export const templateRegister = () => {
 	containerRegister.className = "containerRegister";
 	const contentRegister = 
 	`		
+	
 	<input type="text" name="nombreContactoReg" id="nombreContactoReg" placeholder="nombre">
 	<input type="text" name="emailContactoReg" id="emailContactoReg" placeholder="correo electronico">
 	<input type="password" name="passwordReg" id="passwordReg"placeholder="contraseña">
-	  <label> Pais: </label>
+	
+	<button class="button5" id="btnRegistroEmail">Registrarse</button>
+
+
+
+	   <!--<label> Pais: </label>
 	  <select name="countrylab" id="country-laboratoria">
 		<option id="chile" value="chile"> Chile </option>
 		<option id="mexico" value="mexico">Mexico</option>
@@ -29,10 +35,10 @@ export const templateRegister = () => {
 		<option id="8l" value="8g">8°Generación</option>
 		<option id="9l" value="9g">9°Generación</option>
 		<option id="10l" value="10g">10°Generación</option>
-	</select>
+	</select> -->
 
 
-	<button class="button5" id="btnRegistroEmail">Registrarse</button>
+	
 
 
 	`;

@@ -16,8 +16,8 @@ export const templateNewPost = () => {
   <textarea name="textPost " id="textPost" cols="40" rows="10"></textarea>
   <br>
 
-<input type="radio" name="gender" value="male"> Male<br>
-<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="publicPrivate" value="public">Público<br>
+<input type="radio" name="publicPrivate" value="private">Privado<br>
   <button class="button2" id="publicar">Publicar</button>
   <button class="button2" id="backWall">Volver al Muro</button>
 
@@ -34,7 +34,6 @@ export const templateNewPost = () => {
 
       const comentario = document.getElementById("title").value;
       const titulo = document.getElementById("textPost").value;
-      const autor = "Adriana";
 
       let database = connectDB();
       database.collection('posts').add({
