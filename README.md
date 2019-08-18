@@ -56,8 +56,8 @@ Con ésta información se plantea la jerarquización de la data y de sus funcion
 La encuesta alcanzó un total de 19 respuestas en un día y se puede encontrar haciendo click  [Encuesta](https://docs.google.com/forms/d/1t352sbh-EMpX-eMze90nhKXZ5Y4WrK_BrFf4yn-qM64/prefill)📝
 ​
 - Conclusiones de la encuesta:
-[Imágen](https://adrievelyn.github.io/SCL010-Social-Network/src/assets/img/resultados.png)
-[Imágen](https://adrievelyn.github.io/SCL010-Social-Network/src/assets/img/resultados2.png)
+![Conclusión 1](src/assets/img/resultados.png)
+![Conclusión 2](src/assets/img/resultados2.png)
 ​
 A partir de los resultados pudimos obtener y definir:
 ​
