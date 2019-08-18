@@ -1,5 +1,7 @@
 # Comunidad Laboratorians!
 ​
+ ![logo Comunidad laboratorians](src/assets/img/Captura3.JPG) 
+
 ## Índice
 ​
 * [Definición del Producto](#definicion)
@@ -38,7 +40,7 @@ La interfaz permite  lo siguiente:
 ​
 - Creación de cuenta de usuario e inicio de sesión 
 - Autenticación con Facebook y/o Google y/o Email utilizando Firebase 
-- Crear Muro/timeline de la red social , para publicar post, dar like a una publicación, llevar un conteo de los likes,celiminar un post específico.
+- Crear Muro/timeline de la red social , para publicar post, dar like a una publicación, llevar un conteo de los likes, eliminar un post específico.
 ​
 ## Link de la APP 
 ​
@@ -83,23 +85,44 @@ A partir de los resultados pudimos obtener y definir:
 	 Quiero, poder ingresar con mi correo y contraseña.
 	 Para, optimizar y ocupar la red social."
 ​
-➡ Criterios de aceptación: En la App Web muestra un botón donde estan los  campos para ingresar el correo y contraseña. El usuario debe poder escribir su correo  y contraseña , y  apretar el boton de iniciar sesion.Si los datos son validos, el usuario puede ingresar a la red social pero si los datos no son validos se genera un mensaje de error.
+➡ Criterios de aceptación: En la App Web muestra un botón donde estan los  campos para ingresar el correo y contraseña. El usuario debe poder escribir su correo  y contraseña , y  apretar el boton de iniciar sesion. Si los datos son validos, el usuario puede ingresar a la red social pero si los datos no son validos se genera un mensaje de error.
 
 ### Historia de Usuario 4 : Publicar en el muro 
 	"Yo, como estudiante.
 	 Quiero, ver y poder publicar en  el muro  de la App.
 	 Para,  informarme de las novedades , subir publicaciones y estar al tanto de todo lo que pasa."
 ​
-➡ Criterios de aceptación: En la pagina se vera una pagina en donde permitira al  usuario ver las publicaciones del muro , crear una publicación mediante un cuadro de texto. 
+➡ Criterios de aceptación: En la pagina del muro , se permitira usuario escribir atraves de un cuadro de texto , y asi informar a la comunidad o el fin que el usuario quiera . 
 ​
 ### Historia de Usuario 5 : Editar Publicación
-### Historia de Usuario 6 : Eliminar Publicación
-### Historia de Usuario 7 : Dar Like
-### Historia de Usuario 8 : Contabilizar likes ???
+"Yo, como estudiante.
+	 Quiero, editar la publicacion que subi en mi muro .
+	 Para, colocar otrod datos y fuentes que me faltarón  ."
 ​
+➡ Criterios de aceptación: En la pagina del muro, habra un boton para poder editar lo escrito , y poder publicar lo que realmente quiero.
+
+### Historia de Usuario 6 : Eliminar Publicación
+"Yo, como estudiante.
+	 Quiero, eliminar la publicación .
+	 Para, poder subir otra de un tema mas interesante ."
+​
+➡ Criterios de aceptación: En la pagina del muro, habrá un botón de eliminar para no visualizar lo escrito.
+
+### Historia de Usuario 7 : Dar Like y contabilizar.
+"Yo, como estudiante.
+	 Quiero, dar likes y contabilizarlos.
+	 Para,  informar que me gusta la publicación."
+​
+➡ Criterios de aceptación: En la pagina del muro, se vera un botón para que el usuario pueda colocar Likes .
+​
+
 ​## Diagrama de Flujo  
 ​
 A partir de las historias de usuario se define el flujo básico de la aplicación:
+
+ ![diagrama-flujo](src/assets/img/diagramaflujo.jpeg) 
+
+
 ​
 ## Planificación 
 ​
@@ -109,6 +132,8 @@ Se definen acciones y funciones que nuestro usuario necesita y quiere realizar d
 ## Diseño de Interfaz
 ​
 ####Prototipo de Baja Fidelidad 
+
+ ![Prototipode BF](src/assets/img/PrototipoBF.jpg) 
 ​
 ####Prototipo de Alta Fidelidad 
 ​
@@ -116,32 +141,13 @@ Después de la definición de usuario, de sus características, intereses y gust
 ​
 Para la paleta de colores se establecio viendo todos los colores que eran usados por laboratoria en las redes sociales, donde predomina el amarillo , rosado , verde , negro y escala de grises 
 ​
-###Testeos de Usabilidad
-​
-Se testea con 5 personas presentando la página Laboratorians, pidiéndoles lo siguiente:
-​
-- Registrarse
-- Ingresar por google 
-- Ver muro 
-- Escribir un post 
-​
-Al finalizarla el test se les pregunta:
-​
-    ¿Sabes de que trata la página?
-    ¿La utilizarías como una red social?
-    ¿Agregarías algo?
-
 ​
 ##Organización del Squads en Trello:
 https://trello.com/b/FSFHhEWS/red-social
 
-En conclusión, tratamos de tomar todas las mejoras y consejos, logramos el objetivo de que la página se entendiera y la pudieran ocupar en alguna oportunidad.
-​
-En términos de funciones, jerarquización, botones y solectores......
-​
 ​
 ## Evaluación heurística 
-Realizamos la evaluación para nuestra página web en el siguiente sitio: [haz click aquí]()
+Realizamos la evaluación para nuestra página web en el siguiente sitio: [haz click aquí](https://docs.google.com/spreadsheets/d/1kQ9hsZ9nWkKCiiaW9uN-zUcRCISYY0WRtSaQyXn-XV0/edit?usp=sharing)
 ​
 ##Consideraciones técnicas ( Build with )
 ​
@@ -155,6 +161,7 @@ Realizamos la evaluación para nuestra página web en el siguiente sitio: [haz c
 ​
 - [Adriana Sanchez](https://github.com/adrievelyn)
 - [Alejandra Morales](https://github.com/AlejandraMoralesB)
-- [Paula Estay ](https://github.com/paulaestayc)
 - [Cynthia Gomez](https://github.com/cynthiagomezmontoya)
+- [Paula Estay ](https://github.com/paulaestayc)
+
 ​
