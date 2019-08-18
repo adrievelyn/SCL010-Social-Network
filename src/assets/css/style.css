@@ -610,6 +610,12 @@ h1{
     width: 250px;
 }
 
+.nav-links {
+    font-size: 10px;
+    margin-left: 50%;
+
+}
+
     
 .content {
     font-size: 20px;
@@ -706,8 +712,13 @@ h3 {
 
 .avatar  {
     margin-left: 30%;
-    he
   
+}
+
+.nav-links {
+    font-size: 10px;
+    margin-left: 15%;
+
 }
 
 .buttonPpal {
