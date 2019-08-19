@@ -1,6 +1,6 @@
 export const authCuentaGoogle = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
-  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
+  /*firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);*/
     firebase.auth().signInWithPopup(provider)
     .then(result => {
   /*    document.document.getElementById("avatar").src = result.user.photoURL*/

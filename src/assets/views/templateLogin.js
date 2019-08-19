@@ -18,8 +18,8 @@ export const templateLogin = () => {
 			<br> 
 
 			
-				<input type="email" id="emailSesion" placeholder="Correo electrónico" required>
-				<input type="password" id="passwordSesion" placeholder="Contraseña" required>
+				<input type="email" id="emailSesion" placeholder="Correo electrónico">
+				<input type="password" id="passwordSesion" placeholder="Contraseña">
 				<div class="btn-submit">
 					<button class="button2" id="btnInicioEmail">Iniciar Sesión</button>
 					<br> <br>
