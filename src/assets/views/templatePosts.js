@@ -47,11 +47,7 @@ export const templatePosts = () => {
     buttonSignOut.addEventListener("click", () => {
       authSignOut();
     });
-    let post = containerPosts.firstChild;
-    let boton = post.getElementsByClassName("bLike")
-    boton.addEventListener("click", () => {
-     alert("HOla");
-    });
+
 /*  } else {
     M.toast({
       html: 'Por favor realiza login en el sistema'
