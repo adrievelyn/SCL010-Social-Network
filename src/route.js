@@ -16,6 +16,10 @@ import {
 import {
   templateNewPost
 } from "./assets/views/templateNewPost.js";
+import {
+  templateUploadPhoto
+} from "./assets/views/templateUploadPhoto.js";
+
 
 const changeRouter = h => {
   if (h === "") {
@@ -34,6 +38,9 @@ const changeRouter = h => {
     return showTemplate(h);
   }
   if (h === "#/newPost") {
+    return showTemplate(h);
+  }
+  if (h === "#/newPhoto") {
     return showTemplate(h);
   }
 };
@@ -58,6 +65,9 @@ const showTemplate = h => {
       break;
     case "newPost":
       containerDinamic.appendChild(templateNewPost());
+      break;
+    case "newPhoto":
+      containerDinamic.appendChild(templateUploadPhoto());
       break;
     case "signOut":
       containerDinamic.appendChild(templateLogin());

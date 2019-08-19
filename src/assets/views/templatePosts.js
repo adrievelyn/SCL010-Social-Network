@@ -43,6 +43,11 @@ export const templatePosts = () => {
       location.href = "#/newPost"
     });
 
+    const buttonPhoto = containerPosts.querySelector("#pushPhoto");
+    buttonPhoto.addEventListener("click", () => {
+      location.href = "#/newPhoto"
+    });
+
     const buttonSignOut = containerPosts.querySelector("#signOut");
     buttonSignOut.addEventListener("click", () => {
       authSignOut();
