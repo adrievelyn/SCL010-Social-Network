@@ -26,9 +26,15 @@ export const templateUploadPhoto = () => {
 
     buttonFile.addEventListener("click", () => {
     const file = document.querySelector('.file-select').files[0];
-
-      photos.innerHTML = handleFileUploadChange(file)
+      handleFileUploadChange(file)
+      showPhotoList();
     });
+
+        const buttonVolver = containerUpload.querySelector("#backWall");
+    buttonVolver.addEventListener("click", () => {
+       location.href = "#/posts"
+    });
+
 
 //document.querySelector('.file-submit').addEventListener('click', handleFileUploadSubmit);
 
@@ -39,20 +45,42 @@ export const templateUploadPhoto = () => {
 
 
 export const handleFileUploadChange = (file) => {
+  let user = firebase.auth().currentUser;
 const ref = firebase.storage().ref();
 const name = (+new Date()) + '-' + file.name;
 const metadata = {
   contentType: file.type
 };
-const task = ref.child(name).put(file, metadata);
+const task = ref.child(user.email+"/"+name).put(file, metadata);
 task
   .then(snapshot => snapshot.ref.getDownloadURL())
   .then((url) => {
     console.log(url);
 
-    return `
-       <img src=${url} > 
-    `;
+
   })
   .catch(console.error);
+};
+
+export const showPhotoList = () => {
+  let user = firebase.auth().currentUser;
+  const storageRef = firebase.storage().ref();
+  var listRef = storageRef.child(user.email);
+  // Find all the prefixes and items.
+listRef.listAll().then(function(res) {
+  res.prefixes.forEach(function(folderRef) {
+    console.log(folderRef.url)
+    // All the prefixes under listRef.
+    // You may call listAll() recursively on them.
+
+  });
+  res.items.forEach(function(itemRef) {
+    // All the items under listRef.
+    console.log(itemRef)
+  });
+}).catch(function(error) {
+  // Uh-oh, an error occurred!
+});
+
+
 }
