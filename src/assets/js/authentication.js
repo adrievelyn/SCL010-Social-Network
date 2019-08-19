@@ -3,7 +3,7 @@ export const authCuentaGoogle = () => {
   firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
     firebase.auth().signInWithPopup(provider)
     .then(result => {
-      // document.document.getElementById("avatar").src = result.user.photoURL
+  /*    document.document.getElementById("avatar").src = result.user.photoURL*/
       M.toast({html: 'Bienvenido '+result.user.displayName+ ' te logueaste con Google'})
       location.href = "#/posts"
     }).catch(error => {

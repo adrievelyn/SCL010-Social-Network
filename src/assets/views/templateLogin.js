@@ -9,15 +9,15 @@ export const templateLogin = () => {
 	containerLogin.className = "containerLogin";
 	const contentLogin = `
 
-<div class="formulario">
+<div class="container-login">
 		<div class="contenedor-form">
 			<h2>Se parte de esta Gran Comunidad.</h2>
-			
+			<form action="#" class="signup">
 			<a href="index.html"><img src="assets/img/Captura4.JPG" class="logoReg2" alt="logoComunidad laboratoria"></a>
 			<h3>Logueate</h3>
 			<br> 
 
-			<form action="#">
+			
 				<input type="email" id="emailSesion" placeholder="Correo electrónico" required>
 				<input type="password" id="passwordSesion" placeholder="Contraseña" required>
 				<div class="btn-submit">

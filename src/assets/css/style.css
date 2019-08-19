@@ -9,11 +9,44 @@ header{
     background: white;
     height: auto;
 }
+.bLike, .bComment, .bEdit, .bRemove {
+    /*background: #C2095A;*/
+    background: #ffe521;
+    border-radius: 5px;
+    color: black;
+}
+.buttPub, .buttPho, .buttOut {
+    border-radius: 20px;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 0;
+    background: #dd4c39;
+    width: 150px;
+    margin-top: 0;
+    font-size: 20px;
+    color: white;
+    display: flex;
+
+}
+
+.buttPuPhOu {
+    margin-top: 10%;
+    display: -webkit-inline-box;
+}
 
 .logo img{
     max-width: 200px;
     padding: 6px;
+
 }
+
+   .container-login {
+        margin-left: 30%;
+        
+
+    }
+
 
 nav {
     display: flex;
@@ -23,25 +56,24 @@ nav {
     background: white;
     height: 150px;
     font-size: 25px;
+    margin-left: 100px;
 }
 
 .nav-links a {
     text-decoration: none;
     font-family: inherit;
     color: black;
-    margin-right: 30px;
+    margin-right: 40px;
     font-size: 20px;
     background: white
-    margin-left: 40%;
+}
+
+.nav-links {
+        margin-left: 900px;
 }
 
 .nav-links a:hover {
     color: #c7b300;
-}
-
-.nav-links {
-    margin-left: 65%;
-    margin-bottom: 20px;
 }
 
 /*-------TITULO --------------------------*/
@@ -52,36 +84,37 @@ nav {
     background-size: cover;
     background-position: bottom;
     background-color: rgb(255, 255, 255);
-    display: flex;
     align-items: center;
-    width: 100%;
+    display: flex;
 }
 
 .intro {
-    padding: 20px;
-    margin-left: 20px;
+    padding: 30px;
+    margin-left: 30px;
     max-width: 40%;
     color: white;
 }
 
 /*-------BOTONES INICIAR Y CREAR CUENTA --------------------*/
 
-a.buttons:hover {
+  a.buttons:hover {
     cursor: pointer;
-}
+  }
   
 .buttonPpal  {
-    border-radius: 30px;
+    border-radius: 2px;
     text-align: center;
     font-size: 30px;
-    margin-left:25%;
-    width: 250px;
-    height: 70px;
+    margin-left: 15%;
+    width: 300px;
+    height: 80px;
     color: black;
     margin-top: auto;
+    margin: 0 10px 0 10px;
     padding: 10px;
     transition: all .3s cubic-bezier(0.67, 0.19, 0.45, 0.83);
     background-color: #ffe521;
+    
 }
 
 a.buttonPpal
@@ -95,74 +128,28 @@ a.buttons{
     color:black;
 }
 
-.bLike, .bComment, .bEdit, .bRemove {
-    /*background: #C2095A;*/
-    background: #ffe521;
-    border-radius: 5px;
-    color: black;
-}
-
 /*cONTENIDO---------------------------------*/
 .content {
-    font-size: 30px;
+    font-size: 35px;
+    text-align: auto;
+    padding-bottom: 5px;
     margin-top: 50px;
-    margin-left: 0;
-    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+
     
-  
 }
 
 .avatar  {
-    width: 450px;
-    height: 350px;
-    margin: 50px;
-    margin-left: 10%;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.avatar2 {
-    width: 40px;
-    margin-left: 40%;
-    margin-right: 15%;
+    margin-right: 30%;
 }
 
 h2{
-    margin:100px;
+    margin-right: 50%;
     font-size: 40px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-left: 10px;
 }
 
-h3{
-    margin:100px;
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 10px;
-}
-
-.logoReg2 {
-margin-left: 15%; 
-}
-
-.logueate {
-font-size: 40%; 
-}
-
-.button2 {
-    font-size: 30px;
-    border-radius: 5%;
-}
-
-.btn-submit {
-    margin-top: 25px;
-}
-
-.google-btn{
-    margin-bottom: 15px;
-}
+/* formulario login  */
 
 .container {
     width: 106px;
@@ -175,38 +162,9 @@ font-size: 40%;
     margin: 80px;
     align-items: center;
     align-content: center;
-    width: 75%;
-    margin-left: 30px;
-
 }
 
-.reset-password {
-    margin-bottom: 20px;
-}
-
- .containerRegister {
-    border-style: solid;
-    border-color: #F4DC00;
-    background-color: white;
-
- }
-
-.register2 {
-
-}
-
-.dinamic {
-    margin-left: 30%;
-    width: 50%;
-}
-
-.button5 {
-    margin-top: 40%;
-    width: 10px;
-    font-size: 20px;
-}
-
-/*.signup {
+.signup {
     padding: 0px 25px 25px;
     background: #fff;
     box-shadow: 
@@ -224,7 +182,7 @@ font-size: 40%;
     margin-bottom: 20px;
 }
 
-.signup .header h3, h4 {
+.signup .header h4 {
     color: #333333;
     font-size: 24px;
     font-weight: bold;
@@ -351,9 +309,10 @@ input:-moz-placeholder {
         linear, left top, left bottom, 
         from(#a4b0cb),
         to(#b9c5dd));
-}*/
+}
 
-.button, .button3, .button4, .button5{
+
+.button,.button1, .button2, .button3, .button4, .button5 {
     text-align: center;
     width: 246px;
     height: 47px;
@@ -362,29 +321,12 @@ input:-moz-placeholder {
     font-size: 10px;
     font-weight: 550;
     font-family: inherit;
-    border-radius: 20px;
-    background: #ffe521;
+    border-radius: 2px;
+    background-color: #ffe521;
     color: #000000;
-    transition: all .3s cubic-bezier(0.67, 0.19, 0.45, 0.83);    
+    transition: all .3s cubic-bezier(0.67, 0.19, 0.45, 0.83);
 }
 
-.buttPub, .buttPho, .buttOut {
-    border-radius: 20px;
-    height: 50px;
-    text-align: center;
-    padding-top: 10px;
-    margin-left: 0;
-    background: #dd4c39;
-    width: 200px;
-    margin-top: 0;
-    font-size: 20px;
-    color: white;
-}
-
-.buttPuPhOu {
-    margin-top: 10%;
-    display: -webkit-inline-box;
-}
 
 .button5 {
     margin-left: 10px;;
@@ -396,22 +338,18 @@ input:-moz-placeholder {
     margin-bottom: 40px;
 }
 
+
 #authGoogle {
     background-color: #dd4c39;
 }
 
-/*FINALIZA CONTENIDO*/
-
-/*ESTO ES EL FOOTER*/
 .footer {
     background: black;
-    margin-top: 10%;
+    margin-top: 25%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: rgb(255, 255, 255);
-    width: 100%
-
 }
 
 .root{
@@ -419,728 +357,438 @@ input:-moz-placeholder {
     background: #B4436C;
 }
 
+.contactUs {
+margin-right: 10%;
+font-size: 25px;
+}
+
 .copyRight {
     padding-top: 20%;
     margin-left: 20%;
 }
-
 .logoCopy {
     margin-left: 15%;
 }
 
 .logo {
-    margin-left: 3%;
-    width: 300px;
+    margin-left: 10%;
+   
+   /* height: 10px;
+    width: 20px;
+    transition: 0.6s;
+    transform: translateY(50px);*/
 }
 
+.avatar{
+    width:300px;
+    height: 300px;
+    margin: 50px;
+    margin-left: 40%;
+    padding-top: 10px;
+    margin-top: 20px;
+    }
+
+.avatar2 {
+    width: 40px;
+    margin-left: 40%;
+    margin-right: 15%;
+}
+
+
 h1{
-    padding-top: 5px;
-    font-size: 80px;
-    margin-left: 20%;
-    margin-right: 75%;
+    margin: 2.8rem 0 1.68rem 1.2em;
 }
 
 .reset-password a {
  font-size: 20px; 
  margin :5px;
+
+
+}
+
+.containerRegister{
+ margin: 80px;
+width: 189px;
+height: 180px;
+align-content: center;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 1024px) {
+.tittle {
+    font-size: 20px;
+}
+  .button, .button1, .button2, .button3 {
+    font-size: 25px;
+}
+
+.containerLogin{
+    font-size: 40px;
+}
+ .buttonPpal {
+    font-size: 25px;
+    width: 40%;
+    height: 60px;
+    margin-left: 30%; 
+    padding-top: 10px;
+    margin-top: 50px;
+
+}
+.button5, .button2 {
+    width: 250px;
+    
+}
+.login  {
+    width: 450px;
+    height: 550px;
+    font-size: 30px;
+    margin-top: 150px;
+}
+.button2{
+    margin-top: 5px;
+}
+.logoCopy {
+    margin-left: 7%;
+}
+.contactUs {
+margin-right: 10%;
+font-size: 25px;
 }
 
 .containerRegister {
-    margin: 80px;
-    width: 189px;
-    height: 180px;
-    align-content: center;
-    margin-top: 100px;
-    background: rgb(143, 142, 142);
-    padding-top: 40px;
-    border-radius:20px;
-    margin-left: 10%;
-    color: white;
-}
+    margin-bottom: 20%;
+    width: 80%;
+    margin-left: 0;
 
-.row {
-   margin-left: 120%;
-    margin-right: auto;
-    margin-bottom: 30px
-}
+   }
 
-.post {
+
 
 }
-
-.post-descripcion {
-    color: darkblue;
-    background: lightyellow;
-}
-
-.formulario {
-    border-style: solid;
-    border-color: #F4DC00;
-}
-
-.log-nav {
-    margin-left: 10%;
-}
-
-.footer-info {
-         margin-left: 12%;
-}
- .subscribe {
-        margin-right: 18%;
-        margin-left: 30%;
-        color: white;
- }
-
-
-
 
 
 /* RESPONSIVE -------------------------*/
 
-@media screen and (max-width: 1100px) {
-    .log-nav {
-    margin-left: 10%;
-}
-.content {
-    font-size: 30px;
-    margin-top: 50px;
-    margin-left: 0;
-    margin-right: 0;
-  
+@media screen and (max-width: 630px) {
+
+
+    .nav-links {
+        background: #fffefe;
+        width: 100%;
+        margin: -15px;
+        padding: 0 0 10px;
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .nav-links a {
+        margin: 0px 20px 0px;
+        font-size: 15px;
+    }
+    
+    .logo a {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .footer {
+        background: black;
+        margin-top: 25%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        color: rgb(255, 255, 255);
+    }
+
+    h2{
+        font-size:25px;
+        text-align: justify;
+        margin:25;
+    }
+
+    a.buttons{
+    font-size:25px;
+     }
+
+     .buttonPpal  {
+        text-align: center;
+        font-size: 25px;
+        margin-left: 15%;
+        border-radius: 5px;
+        width: 250px;
+        height: 60px;
+    }
+
+    .container {
+    width: 405px;
+    margin-right: 80px;
+    
+    }
+
+    .avatar{
+        margin: inherit;
+    }
 }
 
-.dinamic {
-    margin-left: 15%;
-    width: 80%;
+@media screen and  (max-width: 580px) {
+
+    .main-title, h2 {
+        display:none;
+    }
+
+    .nav-links a {
+        background: #cac9c9;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+.buttPub, .buttPho, .buttOut {
+width: 120px;
+height: 60px;
+font-size: 15px;
 }
 
-.nav-links {
-    margin-left: 45%;
+    
+    .logo a {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    .intro {
+    padding: 2px;
+    margin-left: 2px;
+    max-width: 90%;
+    }
+
+
+    p{
+        justify-content: center;
+        padding: 5.1%;
+        margin-top: 5%
+    }
+
+    .content {
+        padding-bottom: 2px;
+        margin-top: 10px;
+         margin-left: 5%;
+        margin-right: 5%;
+        font-size: 15px;
+    }
+
+    .avatar{
+    width: 188px;
+    height: 180px;
+    margin: 80px 70px 20px 85px;
+    margin-right: initial;
+    padding-top: 10px;
 }
 
-.avatar  {
-    margin-left: 20%;
-  
-}
-
-.buttonPpal {
-    margin-left: 33%;
-}
-
-.footer-info {
-         margin-left: 15%;
-}
- .subscribe {
-        margin-left: 12%;
-        
- }
-
- .containerLogin{
-   
+form.signup{
     width: 60%;
-    margin-left: 130px;
-}
-
-.main-title {
-    width: 100%;
-}
-
-.footer {
-    width: 100%;
-}
-}
-
-@media screen and  (max-width: 800px) {
-    .log-nav {
-    margin-left: 10%;
-}
-.content {
-    font-size: 30px;
-    margin-top: 50px;
-    margin-left: 0;
-    margin-right: 0;
-  
-}
-
-.dinamic {
-    margin-left: 15%;
-    width: 80%;
-}
-
-.nav-links {
-    margin-left: 45%;
-}
-
-.avatar  {
-    margin-left: 20%;
-    width: 350px;
-    height: 300px;
-  
-}
-
-.buttonPpal {
-    margin-left: 28%;
-}
-
-.footer-info {
-         margin-left: 15%;
-}
- .subscribe {
-        margin-left: 12%;
-        
- }
-
- .containerLogin{
-   
-    width: 75%;
-    margin-left: 70px;
-}
-
-.main-title {
-    width: 100%;
-}
-
-.footer {
-    width: 100%;
-}
-}
-
-@media screen and  (max-width: 799px) {
-    
- .logo {
-    margin-left: 25%;
-    width: 250px;
-}
-
-.nav-links {
-    font-size: 10px;
-    margin-left: 50%;
-
 }
 
     
-.content {
-    font-size: 20px;
-    margin-top: 50px;
-    margin-left: 0;
-    margin-right: 0;
-  
+.container-login {
+    width: 2px 80px 80px 2px;
 }
 
-.dinamic {
-    margin-left: 15%;
-    width: 80%;
-}
-
-.nav-links {
-    font-size: 15px;
-    margin-left: 15%;
-
-}
-
-.avatar  {
-    margin-left: 20%;
-    width: 350px;
-    height: 300px;
-  
-}
-
-.buttonPpal {
-    font-size: 25px;
-    margin-left: 25%;
-    width: 200px;
-    height: 50px;
-}
-
-.footer-info {
-         margin-left: 15%;
-         font-size: 10px;
-
-}
- .subscribe {
-        margin-left: 12%;
-        font-size: 10px;
- }
-
- .containerLogin{
-   
-    width: 75%;
-    margin-left: 45px;
-}
-
-.main-title {
-    width: 100%;
-}
-
-h1 {
-    font-size: 60px;
-}
-
-.avatar  {
-    width: 150px;
-    height: 150px;
-    margin-left: 30%;
-}
-
-.logoLab {
-    margin-left: 10%;
-}
-
-h2{
-    font-size: 30px;
-    margin-left: 10px;
-}
-
-.logoReg2 {
-width: 75%; 
-}
-
-h3 {
-    font-size: 30px;
-}
-
-.button2 {
-    font-size: 30px;
-}
-
-.btn-submit, .google-btn {
-    width: 80%;
-    height: 10%;
-}
-}
-
-@media screen and  (max-width: 787px) {
-
-.avatar  {
-    margin-left: 15%;
-    width: 300px;
-    height: 250px;
-  
-}
-  
-@media screen and  (max-width: 530px) {
-    
-
-.avatar  {
-    margin-left: 15%;
-    width: 300px;
-    height: 250px;
-  
-}
-
-
-.nav-links {
-    font-size: 10px;
-    margin-left: 15%;
-
-}
-
-.buttonPpal {
-    font-size: 20px;
-    margin-left: 25%;
-    width: 150px;
-    height: 50px;
-}
-
-.footer-info {
-         margin-left: 15%;
-         font-size: 10px;
-
-}
- .subscribe {
-        margin-left: 5%;
-        font-size: 10px;
- }
-
- .containerLogin{
-   
-    width: 75%;
-    margin-left: 10%;
-    margin-bottom: 10%;
-    height: 20%;
-}
-
-.main-title {
-    width: 100%;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-.avatar  {
-    width: 100px;
-    height: 100px;
-    margin-left: 30%;
-}
-
-.logoLab {
-    margin-left: 10%;
-}
-
-h2{
-    font-size: 20px;
-    margin-left: 10px;
-}
-
-.logoReg2 {
-width: 60%; 
-}
-
-h3 {
-    font-size: 20px;
-    margin-bottom: 5%;
-}
-
-.button2 {
-    font-size: 20px;
-}
-
-.btn-submit, .google-btn {
-    width: 80%;
-    height: 10%;
-}
-
-.dinamic {
-    width: 80%;
-    height: 40%;
-}
-
-.footer {
-    margin-top: 5%;
-}
-}
-
-@media screen and  (max-width: 523px) {
-    
-
-.avatar  {
-    margin-left: 10%;
-    width: 280px;
-    height: 230px;
-  
-}
-
-@media screen and  (max-width: 421px) {
-
-.logo {
-    margin-left: 15%;
-    width: 250px;
-}
-
-.nav-links {
-    font-size: 10px;
-    margin-left: 0%;
-
-}
-
-.content {
-    font-size: 15px;
-    margin-top: 50px;
-    margin-left: 0;
-    margin-right: 15%;
-  
-}
-
-.avatar  {
-    margin-left: 15%;
-  
-}
-
-.buttonPpal {
-    font-size: 20px;
-    margin-left: 20%;
-    width: 150px;
+.button, .button2, .button3, .button4, .button5 {
     height: 40px;
-}
-
-.footer-info {
-         margin-left: 10%;
-         font-size: 10px;
-
-}
-
- .subscribe {
-        margin-left: 5%;
-        font-size: 10px;
- }
-
- .containerLogin{
-   
-    width: 75%;
-    margin-left: 20px;
-    margin-bottom: 10%;
-    height: 20%;
-}
-
-.logoLab {
+    text-align: center;
+    padding-top: 15px;
     margin-left: 5%;
-    width: 100%;
-}
-
-.main-title {
-    width: 100%;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-.avatar  {
-    width: 100px;
-    height: 100px;
-    margin-left: 30%;
-}
-
-.logoLab {
-    margin-left: 10%;
+    font-weight: 550px;
+    background: #ffe521;
+    margin: 10px 3px 5px 3px;
+    border-radius: 2px;
 }
 
 h2{
-    font-size: 20px;
-    margin-left: 10px;
+    font-size:20px;
+    text-align: justify;
+    margin: 20px;
 }
 
-.logoReg2 {
-width: 60%; 
-margin-left: 20%;
+.signup img{
+    width: 150px;
 }
 
-h3 {
-    font-size: 20px;
-    margin-bottom: 5%;
+.containerRegister{
+margin: 80px 1px 5px 10px;;
+width: 100px;
+height: 100px;
+align-content: center;
+position:relative;
 }
 
-.button2 {
-    font-size: 20px;
+.button5 , .button2 {
+    width: 200px;
+}
+.containerLogin{
+    margin: 80px 0px 10px 10px;
 }
 
-.btn-submit, .google-btn {
-    width: 80%;
-    height: 10%;
+
 }
 
-.dinamic {
-    width: 80%;
-    height: 40%;
-}
-
-.footer {
-    margin-top: 5%;
-}
-}
-
-@media screen and  (max-width: 408px) {
+@media screen and  (max-width: 380px) {
     
+    h1{            
+        font-size: 2em;
+        }
+    .nav a {
+        font-size: 13px;  
+    }
 
-.avatar  {
-    margin-left: 5%;
-    width: 250px;
-    height: 200px;
-  
-}
+    .nav-links {
+        width: 110%;    
 
-@media screen and  (max-width: 390px) {
+    }
+
+    .buttonPpal {
+        text-align: center;
+        font-size: 15px;
+        margin-left: 15%;
+        border-radius: 5px;
+        width: 200px;
+        height: 60px;
+        color: black;
+        margin-top: auto;
+        margin: auto;
+        padding: 15px;
+        transition: all .3s cubic-bezier(0.67, 0.19, 0.45, 0.83);
+        background-color: #ffe521;
+        font-size: 15px;  
+        margin: important;
+
+     }
+    
+     h2{
+        font-size:15px;
+        margin:10px;
+    }
+
+    .container {
+        width: 206px;
+        max-width: 206px;    
+    }
+    
+    .avatar{
+        width: 150px;
+        height: 150px;
+        margin-top: 10%;
+    }
+
+
+    .footer{
+       height: 100px;
+    
+       margin-bottom: 0;
+    }
+
+    .content {
+        display: none;
+    }
+
     .logo {
-   margin-top: 10px;
+        margin-left: 65px;
+
+    }
+
+    .logoReg2 {
+        width: 200px;
+        margin-left: 50px;
+
+    }
+
+/*    .btn-submit {
+        width: 70%;
+        height: 40px;
+        font-size: 20px;
+
+    }*/
+
+    .button2 {
+        
+        height: 40px;
+        font-size: 20px;
+
+    }
+
+    .signup {
+    padding: 0px 25px 25px;
+    background: #fff;
+    box-shadow: 
+        0px 0px 0px 8px rgba( 255,255,255,0.4 ), 
+        0px 9px 30px rgba( 0,0,0,0.33 );
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: table;
+    position: relative;
+    border : #ffe521 3px solid;
 }
 
-h2{
-    margin-top: 10px;
-}
+    .container-login {
+        width: 45%;
+        
 
-.main-title{
-    width: 110%;
-}
-.dinamic {
-    width: 100%;
-    height: 35%;
-    margin-left: 10%;
-}
+    }
 
-.footer-info {
-    margin-left: 15%;
-}
+    .containerLogin {
+        width: 25%;
+        
 
-.footer {
-    margin-top: 5%;
-    width: 110%;
-}
-}
+    }
 
-@media screen and  (max-width: 355px) {
+    .contenedor-form {
+        border-color: darkgray;
+        width: 100%;
+    }
 
-.nav-links {
-    align-items: unset;
-    margin-left: 35%;
-}
-
-.main-title{
-    width: 110%;
-    height: 50%;
-}
-
-.footer-info {
-    margin-left: 15%;
-}
-
-.content {
-    margin-top: 10px;
-}
-
-h3 {
-    margin-bottom: 10px;
-}
-
-.containerLogin {
-    margin-top: 20px;
-}
-
-h1{
-    font-size: 30px;
-}
-.footer {
-    width:110%;
-}
-}
-
-@media screen and  (max-width: 302px) {
-
-.main-title{
-    width: 110%;
-    height: 50%;
-}
-
-h1{
-    font-size: 30px;
-}
-
-h2{
-    width: 100%;
-    margin-bottom: 0;
-}
-
-h3 {
-    margin-top: 10px;
-}
-
-.footer {
-    width:110%;
-}
-}
-
-@media screen and  (max-width: 284px) {
-
-.main-title{
-    width: 110%;
-    height: 50%;
-}
-
-h1{
-    font-size: 30px;
-}
-
-h2{
-    width: 100%;
-    margin-bottom: 0;
-}
-
-h3 {
-    margin-top: 10px;
-}
-
-.footer {
-    width:110%;
-}
-}
-
-@media screen and  (max-width: 262px) {
-
-.main-title{
-    width: 105%;
-    height: 50%;
-}
-
-h1{
-    font-size: 30px;
+   .containerRegister {
+    margin-bottom: 100%;
+    width: 80%;
     margin-left: 0;
+   }
+
+  footer {
+  display: none; 
 }
-
-h2{
-    width: 100%;
-    margin-bottom: 0;
-    font-size: 15px;
-    margin-left: 15px;
-}
-
-h3 {
-    margin-top: 10px;
-    font-size: 15px;
-    margin-bottom: 0;
-}
-
-.button2 {
-    font-size: 15px;
-}
-
-.btn-submit {
-    margin-top: 10px;
-}
-
-.reset-password {
-    font-size: 15px;
-}   
-
-.avatar  {
-    margin-left: 0;
-    width: 250px;
-    height: 200px;
   
+.footer{
+display: none;
 }
 
-.buttonPpal {
-    margin-left: 15%;
-}
+  }
 
-.subscribe {
+  .logoLab {
     display: none;
-}
+  }
 
-.logoLab {
-    margin-left: 0;
-}
 
-.footer {
-    width: 110%;
-}
-}
-
-@media screen and  (max-width: 250px) {
-
-.logo {
-    margin-left: 0;
-}
-
-.main-title{
-    width: 105%;
-    height: 50%;
-}
-
-.subscribe {
+    footer p {
     display: none;
-}
 
-.logoLab {
-    margin-left: 0;
-}
-
-.footer-info {
-    margin-left: 0;
-}
-
-.footer {
-    width: 110%;
-}
-}
+    }
 
 
+    footer .subscribe {
+        display: none;
+    }
+}
